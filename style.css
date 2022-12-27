@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Spray+Paint&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fadeInAnimation ease-in 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Navbar */
+#navbar {
+  transition: 0.3s ease-in-out;
+  font-size: 26px;
+  font-family: "Bebas Neue";
+}
+
+#navbarNav li {
+  margin: 0px 10px;
+}
+.nav-color {
+  background-color: rgba(0, 0, 0, 0.781);
+}
+
+.add-shadow {
+  box-shadow: 2px 2px 20px 3px rgba(134, 134, 134, 0.815);
+}
+
+.heading {
+  margin-bottom: 70px;
+}
+
+.heading-first {
+  color: #dc4c64;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #dc4c64;
+  letter-spacing: 0.75px;
+}
+
+section {
+  margin: 30px 0px;
+  padding: 100px 0px;
+}
+
+/* Content */
+/* Hero */
+
+.hero-container {
+  padding-top: 5%;
+}
+
+.illustration {
+  width: 500px;
+}
+
+/* About */
+
+.about-container {
+  padding-bottom: 50px;
+}
+
+.progress {
+  height: 20px !important;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.feature-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.feature-icon {
+  color: #f03e3e;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10px;
+  background-color: #ffe3e3;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/*  Testimonials*/
+#testimonials {
+  background-color: #ffe3e3;
+}
+
+.testimonial-container {
+  padding: 30px;
+}
+
+.reviewer {
+  display: flex;
+  gap: 10px;
+}
+
+.client-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Work */
+#carousel {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+#carousel img {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Contact me */
+.form-container {
+  background-image: linear-gradient(
+    0deg,
+    rgba(138, 85, 52, 0.1),
+    rgba(90, 18, 201, 0.3)
+  );
+  margin: 0px auto;
+  width: 70%;
+  padding: 20px;
+  border-radius: 11px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  color: #fff;
+  padding: 30px 0px 10px 0px;
+  width: 100%;
+  background-color: rgb(121, 121, 121);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.sm-icon {
+  font-size: 20px;
+  margin: 10px 10px;
+  color: #fff;
+}
