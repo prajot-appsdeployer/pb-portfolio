@@ -1,7 +1,11 @@
+const navbar = document.getElementById("navbar");
+const brandName = document.getElementById("brand-name");
+
 // on scroll effects
 const mediaQuery = window.matchMedia("(max-width: 990px)");
 if (mediaQuery.matches) {
   window.onload = function() {
+    
     navbar.classList.add("navbar-dark", "nav-color");
   };
 
@@ -18,24 +22,7 @@ if (mediaQuery.matches) {
   });
 } else {
 
-  // on scroll navbar big screen
-  window.addEventListener("scroll", (e) => {
-    const navbar = document.getElementById("navbar");
-
-    if (mediaQuery.matches) {
-      if (window.pageYOffset > 0) {
-        navbar.classList.add("add-shadow", "navbar-dark", "nav-color");
-      } else {
-        navbar.classList.remove("add-shadow");
-      }
-    } else {
-      if (window.pageYOffset > 0) {
-        navbar.classList.add("add-shadow", "navbar-dark", "nav-color");
-      } else {
-        navbar.classList.remove("add-shadow", "navbar-dark", "nav-color");
-      }
-    }
-  });
+  
 
   const navbarLinks = document.querySelectorAll("#navbar a");
   navbarLinks.forEach((link) => {
@@ -50,5 +37,24 @@ if (mediaQuery.matches) {
 
 }
 
+// on scroll navbar big screen
+window.addEventListener("scroll", (e) => {
+
+
+  if (mediaQuery.matches) {
+    if (window.pageYOffset > 0) {
+      navbar.classList.add("add-shadow", "navbar-dark", "nav-color");
+    } else {
+      navbar.classList.remove("add-shadow");
+    }
+  } else {
+    if (window.pageYOffset > 0) {
+
+      navbar.classList.add("add-shadow", "navbar-dark", "nav-color");
+    } else {
+      navbar.classList.remove("add-shadow", "navbar-dark", "nav-color");
+    }
+  }
+});
 
 

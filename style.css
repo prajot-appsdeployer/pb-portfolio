@@ -25,22 +25,9 @@ body {
   }
 }
 
-/* Navbar */
-#navbar {
-  transition: 0.3s ease-in-out;
-  font-size: 26px;
-  font-family: "Bebas Neue";
-}
-
-#navbarNav li {
-  margin: 0px 10px;
-}
-.nav-color {
-  background-color: rgba(0, 0, 0, 0.781);
-}
-
-.add-shadow {
-  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.61);
+.navbar-brand{
+  font-size: 24px;
+  
 }
 
 .heading {
@@ -62,6 +49,28 @@ section {
   margin: 30px 0px;
   padding: 100px 0px;
 }
+
+
+
+/* Navbar */
+#navbar {
+  transition: 0.3s ease-in-out;
+  font-size: 26px;
+
+}
+
+#navbarNav li {
+  margin: 0px 10px;
+}
+.nav-color {
+  background-color: rgba(0, 0, 0, 0.781);
+}
+
+.add-shadow {
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.61);
+}
+
+
 
 /* Content */
 /* Hero */
@@ -132,9 +141,13 @@ ul {
   width: 100%;
   height: 500px;
   overflow: hidden;
+   
 }
 
+
+
 #carousel img {
+  
   width: 50%;
   height: 500px;
   object-fit: cover;
